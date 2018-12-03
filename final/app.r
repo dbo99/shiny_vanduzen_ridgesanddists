@@ -70,7 +70,7 @@ fcast_end_date_rev <-  rev(seq(date(min(hefs_dtrmnstc$fcast_t_pdt)), date(max(he
         am_fcast <- input$am_fcast
         fcast_start_date <- ymd(input$fcast_start_date)
         fcast_end_date <- ymd(input$fcast_end_date)
-        vol_ridge_scale <- input$vol_ridge_scale 
+        vol_ridge_scale <- input$vol_ridge_scale
         p1 <- plotridgesandpdfs_cumvol(hefs_dtrmnstc, am_fcast, fcast_start_date, fcast_end_date, vol_ridge_scale)
         
         print(p1)}  
